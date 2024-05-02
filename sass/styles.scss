@@ -1,0 +1,32 @@
+@import url(./layers.scss);
+
+:root {
+  --dark-brown: #a54a38;
+  --light-brown: #bf624c;
+  --dark-green: #51af5e;
+  --light-green: #51af5e;
+  --shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+body {
+  display: grid;
+  counter-reset: score;
+  height: 100vh;
+  margin: 0;
+  place-items: center;
+  width: 100%;
+}
+
+
+
+.phone {
+    background: #CCEFFF;
+    border: 8px solid black;
+    border-radius: 40px;
+    box-shadow: var(--shadow); /* After */
+    overflow: hidden; /* After */
+    height: 600px;
+    position: relative;
+    width: 300px;
+  }
+
