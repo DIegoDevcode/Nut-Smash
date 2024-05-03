@@ -81,7 +81,7 @@
 }
 
 .layer-7 {
-    background: var(--light-brown); /* After */
+    background: $light-brown; /* After */
     border-radius: 20px; /* After */
     box-shadow: var(--shadow); /* After */
     bottom: 0;
@@ -94,7 +94,7 @@
   }
 
   .layer-8 {
-  background: papayawhip; 
+  // background: papayawhip; 
     bottom: 0;
     height: 120px;
     left: 0;
@@ -137,3 +137,65 @@
     position: absolute;
     width: 80px;
   }
+
+
+  .layer-9{
+    //background-color: white;
+    bottom: 0; 
+    height: 100px;
+    width: 120px;
+    position: absolute;
+    z-index: 9;   
+  }
+
+  .layer-9__left-cloud{
+    background: white;
+    border-radius: 40px 40px 0 0;
+    display: inline;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 80px;
+  }
+
+  .layer-9__right-cloud { 
+    background: white;
+    border-radius: 0 40px 30px 0;
+    bottom: 0;
+    display: inline-block;
+    height: 60%;
+    left: 80px;
+    position: absolute;
+    width: 40px;
+  }
+
+  .layer-10 {
+    /*   background: pink; */
+      bottom: 0;
+      height: 100px;
+      position: absolute;
+      right: 0;
+      width: 120px;
+      z-index: 10;
+    }
+
+    .layer-10__left-cloud { 
+      background: white;
+      border-radius: 40px 0 0 30px;
+      bottom: 0;
+      display: inline-block;
+      height: 60%;
+      right: 80px;
+      position: absolute;
+      width: 40px;
+    }
+
+    .layer-10__right-cloud{
+      background: white;
+      border-radius: 40px 40px 0 0;
+      display: inline-block;
+      height: 100%;
+      right: 0;
+      position: absolute;
+      width: 80px;
+    }
