@@ -1,0 +1,30 @@
+.layer-1 input[type=checkbox]{
+    /* After 4 */
+    animation-name: bunny;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.layer-2 input[type=checkbox] {
+    /* After 4 */
+    animation-name: bunny;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .layer-4 input[type=checkbox] {
+    /* After 4 */
+    animation-name: bunny;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  .layer-6 input[type=checkbox] {
+    /* After 4 */
+    animation-name: bunny;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }

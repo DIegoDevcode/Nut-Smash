@@ -1,0 +1,139 @@
+.layer-1{
+    background-color: red;
+    bottom: 0;
+    height: 450px;
+    position: absolute;
+    right: 60px;
+    width: 80px;
+    z-index: 1;
+    /* After 4 */
+    animation-name: layer;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.layer-2{
+    background-color: red;
+    bottom: 0;
+    height: 450px;
+    position: absolute;
+    left: 60px;
+    width: 80px;
+    z-index: 2;
+}
+
+.layer-3{
+    background-color: $light-brown;
+    border-radius: 20px;
+    box-shadow: var($shadow);
+    bottom: 0;
+    height: 400px;
+    left: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    width: 220px;
+    z-index: 3;
+}
+
+.layer-4{
+    background-color: green;
+    bottom: 0;
+    height: 350px;
+    left: 15px;
+    position: absolute;
+    width: 80px;
+    z-index: 4;
+      /* After 4 */
+      animation-name: layer;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+}
+
+.layer-5{
+    background-color: $light-green;
+    border-radius: 20px;
+    box-shadow: $shadow;
+    bottom: 0;
+    height: 300px;
+    overflow: hidden;
+    position: absolute;
+    width: 200px;
+    z-index: 5;
+}
+
+.layer-6{
+    background-color: cadetblue;
+    bottom: 0;
+    height: 250px;
+    position: absolute;
+    right: 30px;
+    width: 80px;
+    z-index: 6;
+
+    animation-name: layer;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.layer-7 {
+    background: var(--light-brown); /* After */
+    border-radius: 20px; /* After */
+    box-shadow: var(--shadow); /* After */
+    bottom: 0;
+    height: 200px;
+    overflow: hidden; /* After */
+    position: absolute;
+    right: 0;
+    width: 150px;
+    z-index: 7;
+  }
+
+  .layer-8 {
+  background: papayawhip; 
+    bottom: 0;
+    height: 120px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    z-index: 8;
+  }
+
+  .layer-8__left-lawn {
+    background: $dark-green;
+    border-radius: 40px 40px 0 0;
+    bottom: 0;
+    display: inline-block;
+    height: 70%;
+    left: 0;
+    position: absolute;
+    width: 80px;
+  }
+
+  .layer-8__center-lawn {
+    background: $dark-green;
+    border-radius: 40px 40px 0 0;
+    bottom: 0;
+    display: inline-block;
+    height: 100%;
+    left: 60px;
+    position: absolute;
+    width: 80px;
+  }
+
+  .layer-8__right-lawn {
+    background: $dark-green;
+    border-radius: 40px 40px 0 0;
+    bottom: 0;
+    display: inline-block;
+    height: 80%;
+    left: 130px;
+    position: absolute;
+    width: 80px;
+  }

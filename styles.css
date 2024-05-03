@@ -8,31 +8,234 @@ body {
   height: 100vh;
   margin: 0;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .lawn {
-  background-color: #51af5e;
+  background: var(--dark-green);
   height: 20px;
   width: 100%;
 }
 
+.land {
+  background: linear-gradient(135deg, var(--dark-green) 25%, transparent 25%) -50px 0, linear-gradient(-135deg, var(--dark-green) 25%, transparent 25%) -50px 0, linear-gradient(45deg, var(--light-brown) 25%, transparent 25%), linear-gradient(-45deg, transparent 25%, var(--dark-brown) 25%);
+  background-size: 33px 30px;
+  height: 30px;
+  width: 100%;
+}
+
 .phone {
-  background-color: #ccefff;
+  background: #ccefff;
   border: 8px solid black;
-  border-radius: 30px;
-  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  overflow: hidden;
+  border-radius: 40px;
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow); /* After */
+  overflow: hidden; /* After */
   height: 600px;
   position: relative;
   width: 300px;
+}
+
+.layer-1 {
+  background-color: red;
+  bottom: 0;
+  height: 450px;
+  position: absolute;
+  right: 60px;
+  width: 80px;
+  z-index: 1;
+  /* After 4 */
+  -webkit-animation-name: layer;
+          animation-name: layer;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.layer-2 {
+  background-color: red;
+  bottom: 0;
+  height: 450px;
+  position: absolute;
+  left: 60px;
+  width: 80px;
+  z-index: 2;
+}
+
+.layer-3 {
+  background-color: #bf624c;
+  border-radius: 20px;
+  -webkit-box-shadow: var(0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22));
+          box-shadow: var(0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22));
+  bottom: 0;
+  height: 400px;
+  left: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  width: 220px;
+  z-index: 3;
+}
+
+.layer-4 {
+  background-color: green;
+  bottom: 0;
+  height: 350px;
+  left: 15px;
+  position: absolute;
+  width: 80px;
+  z-index: 4;
+  /* After 4 */
+  -webkit-animation-name: layer;
+          animation-name: layer;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.layer-5 {
+  background-color: #51af5e;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  bottom: 0;
+  height: 300px;
+  overflow: hidden;
+  position: absolute;
+  width: 200px;
+  z-index: 5;
+}
+
+.layer-6 {
+  background-color: cadetblue;
+  bottom: 0;
+  height: 250px;
+  position: absolute;
+  right: 30px;
+  width: 80px;
+  z-index: 6;
+  -webkit-animation-name: layer;
+          animation-name: layer;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.layer-7 {
+  background: var(--light-brown); /* After */
+  border-radius: 20px; /* After */
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow); /* After */
+  bottom: 0;
+  height: 200px;
+  overflow: hidden; /* After */
+  position: absolute;
+  right: 0;
+  width: 150px;
+  z-index: 7;
+}
+
+.layer-8 {
+  background: papayawhip;
+  bottom: 0;
+  height: 120px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  z-index: 8;
+}
+
+.layer-8__left-lawn {
+  background: #51af5e;
+  border-radius: 40px 40px 0 0;
+  bottom: 0;
+  display: inline-block;
+  height: 70%;
+  left: 0;
+  position: absolute;
+  width: 80px;
+}
+
+.layer-8__center-lawn {
+  background: #51af5e;
+  border-radius: 40px 40px 0 0;
+  bottom: 0;
+  display: inline-block;
+  height: 100%;
+  left: 60px;
+  position: absolute;
+  width: 80px;
+}
+
+.layer-8__right-lawn {
+  background: #51af5e;
+  border-radius: 40px 40px 0 0;
+  bottom: 0;
+  display: inline-block;
+  height: 80%;
+  left: 130px;
+  position: absolute;
+  width: 80px;
+}
+
+.layer-1 input[type=checkbox] {
+  /* After 4 */
+  -webkit-animation-name: bunny;
+          animation-name: bunny;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.layer-2 input[type=checkbox] {
+  /* After 4 */
+  -webkit-animation-name: bunny;
+          animation-name: bunny;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.layer-4 input[type=checkbox] {
+  /* After 4 */
+  -webkit-animation-name: bunny;
+          animation-name: bunny;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.layer-6 input[type=checkbox] {
+  /* After 4 */
+  -webkit-animation-name: bunny;
+          animation-name: bunny;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
