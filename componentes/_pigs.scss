@@ -1,0 +1,59 @@
+.minion-pig{
+    left: 70%;
+    top: -15px;
+    height: 100px;
+	width: 120px;
+    background-color: $minion-color;
+    border: 2px solid #2b4d13;
+    position: absolute;
+    border-radius:  50% 50% 50% 50% / 55% 60% 40% 45%;
+    &:before /* shadow */ {
+		height: 100%;
+		width: 100%;
+		box-shadow: (inset 5px -5px 8px 2px rgba(#000000, 0.2));
+		border-radius: (inherit);
+		z-index: 50;
+	}
+}
+
+.ear-left-outer{
+    height: 20px;
+    width: 18px;
+    background: $minion-color;
+    border: 2px solid #2b4d13;
+    border-radius: 80%;
+    position: absolute;
+}
+
+.ear-left-inner{
+    height: 10px;
+    width: 10px;
+    top: 4px;
+    left: 2px;
+    background: #2F6317;
+    border: 2px solid #2b4d13;
+    border-radius: 80%;
+    position: absolute;
+}
+
+.ear-right-outer{
+    height: 20px;
+    width: 18px;
+    background: $minion-color;
+    border: 2px solid #2b4d13;
+    border-radius: 80%;  
+    position: absolute;
+    left: 95px;
+}
+
+.ear-right-inner{
+     height: 10px;
+    width: 10px;
+    top: 4px;
+    left: 2px;
+    background: #2F6317;
+    border: 2px solid #2b4d13;
+    border-radius: 80%;
+    position: absolute;
+}
+
