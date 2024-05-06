@@ -24,8 +24,9 @@
 }
 
 .layer-3{
-    background-color: $light-brown;
-    border-radius: 20px;
+  @include background-zigzag();
+  background-color: $dark-brown;
+  border-radius: 20px;
     box-shadow: var($shadow);
     bottom: 0;
     height: 400px;
@@ -54,19 +55,19 @@
 }
 
 .layer-5{
-    background-color: $light-green;
+    @include background-zigzag();
+    background-color: $dark-brown;
     border-radius: 20px;
     box-shadow: $shadow;
     bottom: 0;
     height: 300px;
     overflow: hidden;
     position: absolute;
-    width: 200px;
+    width: 140px;
     z-index: 5;
 }
 
 .layer-6{
-    background-color: cadetblue;
     bottom: 0;
     height: 250px;
     position: absolute;
@@ -81,7 +82,9 @@
 }
 
 .layer-7 {
-    background: $light-brown; /* After */
+  @include background-zigzag();
+  background-color: $dark-brown;  
+    /* After */
     border-radius: 20px; /* After */
     box-shadow: var(--shadow); /* After */
     bottom: 0;

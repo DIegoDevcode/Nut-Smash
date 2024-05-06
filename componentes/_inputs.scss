@@ -1,20 +1,39 @@
+input[type=checkbox] {
+  appearance: none;
+  cursor: pointer;
+  height: 50px;
+  margin: 0;
+  position: relative;
+  top: 0;
+  width: 80px;
+  z-index: 2;
+}
+
+input[type=checkbox]:focus {
+  appearance: none;
+  outline: none;
+}
+
+input:checked {
+  counter-increment: score;
+}
+
+.score::after {
+  content: counter(score);
+}
 .layer-1 input[type=checkbox]{
-    /* After 4 */
-    animation-name: bunny;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    left: -170px;
+    animation: layer 2.0s ease-in-out infinite;
+
 }
 
 .layer-2 input[type=checkbox] {
-    /* After 4 */
     animation-name: bunny;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
   }
   .layer-4 input[type=checkbox] {
-    /* After 4 */
     animation-name: bunny;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
@@ -22,9 +41,8 @@
   }
 
   .layer-6 input[type=checkbox] {
-    /* After 4 */
     animation-name: bunny;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-  }
+  } 

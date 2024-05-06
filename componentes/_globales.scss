@@ -1,9 +1,20 @@
 $dark-brown: #a54a38;
 $light-brown: #bf624c;
 $dark-green: #51af5e;
-$light-green: #51af5e;
+$light-green: #51AF5E;
 $shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 $minion-color:#66FF00;
+
+@mixin background-zigzag {
+  background: linear-gradient(135deg, $dark-green 25% , transparent 25%) -50px 0,
+  linear-gradient(-135deg, $dark-green 25%, transparent 25%) -50px 0,
+  linear-gradient(45deg, $light-brown 25%, transparent 25%),
+  linear-gradient(-45deg, $dark-brown 25%, transparent 25%);
+background-size: 100px 100px;
+height: 30px;
+  width: 100%;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -18,23 +29,10 @@ body {
   place-items: center;
 }
 
-.lawn {
-  background: var(--dark-green);
-  height: 20px;
-  width: 100%;
-}
 
 .land {
-  background: linear-gradient(135deg, var(--dark-green) 25%, transparent 25%) -50px
-      0,
-    linear-gradient(-135deg, var(--dark-green) 25%, transparent 25%) -50px 0,
-    linear-gradient(45deg, var(--light-brown) 25%, transparent 25%),
-    linear-gradient(-45deg, transparent 25%, var(--dark-brown) 25%);
-  background-size: 33px 30px;
-  height: 30px;
-  width: 100%;
+  @include background-zigzag()
 }
-
 .phone {
   background: #ccefff;
   border: 8px solid black;
