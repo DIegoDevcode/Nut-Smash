@@ -35,7 +35,7 @@ body {
   overflow: hidden; /* After */
   height: 600px;
   position: relative;
-  width: 300px;
+  width: 440px;
 }
 
 .layer-1 {
@@ -82,7 +82,6 @@ body {
 }
 
 .layer-4 {
-  background-color: blue;
   bottom: 0;
   height: 350px;
   left: 15px;
@@ -249,8 +248,8 @@ body {
   width: 80px;
 }
 
-.minion-pig {
-  left: 70%;
+.minion-pig-one {
+  left: 100%;
   top: -15px;
   height: 100px;
   width: 120px;
@@ -259,13 +258,35 @@ body {
   position: absolute;
   border-radius: 50% 50% 50% 50%/55% 60% 40% 45%;
 }
-.minion-pig:before {
+.minion-pig-one:before {
   height: 100%;
   width: 100%;
   -webkit-box-shadow: inset 5px -5px 8px 2px rgba(0, 0, 0, 0.2);
           box-shadow: inset 5px -5px 8px 2px rgba(0, 0, 0, 0.2);
   border-radius: inherit;
   z-index: 50;
+}
+
+.minion-pig-two {
+  left: 0;
+  top: -15px;
+  height: 100px;
+  width: 120px;
+  background-color: #66FF00;
+  border: 2px solid #2b4d13;
+  position: absolute;
+  border-radius: 50% 50% 50% 50%/55% 60% 40% 45%;
+}
+
+.minion-pig-three {
+  left: -15px;
+  top: -15px;
+  height: 100px;
+  width: 120px;
+  background-color: #66FF00;
+  border: 2px solid #2b4d13;
+  position: absolute;
+  border-radius: 50% 50% 50% 50%/55% 60% 40% 45%;
 }
 
 .ear-left-outer {
@@ -307,6 +328,76 @@ body {
   border: 2px solid #2b4d13;
   border-radius: 80%;
   position: absolute;
+}
+
+.eye-left-outer {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  top: 40px;
+  left: 5px;
+}
+
+.eye-left-inner {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  background-color: black;
+  border-radius: 50%;
+  top: 10px;
+  left: 10px;
+}
+
+.nose-container {
+  width: 50px;
+  background: white;
+  position: absolute;
+  height: 49px;
+  border-radius: 100%;
+  top: 30px;
+  left: 35px;
+}
+
+.nose-right-circle {
+  width: 15px;
+  top: 20px;
+  background: black;
+  position: absolute;
+  height: 15px;
+  border-radius: 50%;
+  left: 10px;
+}
+
+.nose-left-circle {
+  width: 15px;
+  background: black;
+  position: absolute;
+  height: 15px;
+  left: 30px;
+  top: 20px;
+  border-radius: 50%;
+}
+
+.eye-right-outer {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  top: 40px;
+  right: 3px;
+}
+
+.eye-right-inner {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  background-color: black;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
 }
 
 .layer-1 input[type=checkbox] {

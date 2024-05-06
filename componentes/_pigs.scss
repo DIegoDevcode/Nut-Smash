@@ -1,5 +1,5 @@
-.minion-pig{
-    left: 70%;
+.minion-pig-one{
+    left: 100%;
     top: -15px;
     height: 100px;
 	width: 120px;
@@ -14,6 +14,28 @@
 		border-radius: (inherit);
 		z-index: 50;
 	}
+}
+
+.minion-pig-two{
+    left: 0;
+    top: -15px;
+    height: 100px;
+	width: 120px;
+    background-color: $minion-color;
+    border: 2px solid #2b4d13;
+    position: absolute;
+    border-radius:  50% 50% 50% 50% / 55% 60% 40% 45%;
+}
+
+.minion-pig-three{
+    left: -15px;
+    top: -15px;
+    height: 100px;
+	width: 120px;
+    background-color: $minion-color;
+    border: 2px solid #2b4d13;
+    position: absolute;
+    border-radius:  50% 50% 50% 50% / 55% 60% 40% 45%;
 }
 
 .ear-left-outer{
@@ -57,3 +79,73 @@
     position: absolute;
 }
 
+.eye-left-outer{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    top: 40px;
+    left: 5px;
+}
+
+.eye-left-inner{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+}
+
+.nose-container{
+    width: 50px;
+    background: white;
+    position: absolute;
+    height: 49px;
+    border-radius: 100%;
+    top: 30px;
+    left: 35px;
+}
+
+.nose-right-circle{
+    width: 15px;
+    top: 20px;
+    background: black;
+    position: absolute;
+    height: 15px;
+    border-radius: 50%;
+    left: 10px;
+}
+
+
+.nose-left-circle{
+    width: 15px;
+    background: black;
+    position: absolute;
+    height: 15px;
+    left: 30px;
+    top: 20px;
+    border-radius: 50%;
+}
+
+.eye-right-outer{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    top: 40px;
+    right: 3px;
+}
+
+.eye-right-inner{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    top: 10px;
+    right: 10px;
+}
