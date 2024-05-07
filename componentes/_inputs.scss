@@ -3,7 +3,7 @@ input[type=checkbox] {
   cursor: pointer;
   height: 50px;
   margin: 0;
-  position: relative;
+  position: absolute;
   top: 0;
   width: 80px;
   z-index: 2;
@@ -22,27 +22,22 @@ input:checked {
   content: counter(score);
 }
 .layer-1 input[type=checkbox]{
-    left: -170px;
+    left: -155px;
     animation: layer 2.0s ease-in-out infinite;
 
 }
 
 .layer-2 input[type=checkbox] {
-    animation-name: bunny;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+  animation: layer 2.0s ease-in-out infinite;
+  position: absolute;
+  left: -20px;
+  top: -10px;
   }
   .layer-4 input[type=checkbox] {
-    animation-name: bunny;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    animation: layer 2.0s ease-in-out infinite;
+
   }
 
   .layer-6 input[type=checkbox] {
-    animation-name: bunny;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    animation: layer 2.0s ease-in-out infinite;
   } 

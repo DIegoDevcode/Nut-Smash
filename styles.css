@@ -32,6 +32,12 @@ body {
   width: 440px;
 }
 
+.score {
+  text-align: center;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
 .layer-1 {
   bottom: 0;
   height: 450px;
@@ -40,14 +46,8 @@ body {
   width: 80px;
   z-index: 1;
   /* After 4 */
-  -webkit-animation-name: layer;
-          animation-name: layer;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation: layer 1s ease-in-out infinite;
+          animation: layer 1s ease-in-out infinite;
 }
 
 .layer-2 {
@@ -87,14 +87,8 @@ body {
   width: 80px;
   z-index: 4;
   /* After 4 */
-  -webkit-animation-name: layer;
-          animation-name: layer;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation: layer 0.5s ease-in-out infinite;
+          animation: layer 0.5s ease-in-out infinite;
 }
 
 .layer-5 {
@@ -121,14 +115,8 @@ body {
   right: 30px;
   width: 80px;
   z-index: 6;
-  -webkit-animation-name: layer;
-          animation-name: layer;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation: layer 2s ease-in-out infinite;
+          animation: layer 2s ease-in-out infinite;
 }
 
 .layer-7 {
@@ -163,35 +151,35 @@ body {
 
 .layer-8__left-lawn {
   background: #51af5e;
+  height: 70%;
+  left: 0;
+  width: 80px;
   border-radius: 40px 40px 0 0;
   bottom: 0;
   display: inline-block;
-  height: 70%;
-  left: 0;
   position: absolute;
-  width: 80px;
 }
 
 .layer-8__center-lawn {
   background: #51af5e;
+  height: 100%;
+  left: 60px;
+  width: 80px;
   border-radius: 40px 40px 0 0;
   bottom: 0;
   display: inline-block;
-  height: 100%;
-  left: 60px;
   position: absolute;
-  width: 80px;
 }
 
 .layer-8__right-lawn {
   background: #51af5e;
+  height: 80%;
+  left: 130px;
+  width: 80px;
   border-radius: 40px 40px 0 0;
   bottom: 0;
   display: inline-block;
-  height: 80%;
-  left: 130px;
   position: absolute;
-  width: 80px;
 }
 
 .layer-9 {
@@ -447,28 +435,6 @@ body {
     height: 4px;
   }
 }
-@-webkit-keyframes bunny {
-  0% {
-    top: 0;
-  }
-  25% {
-    top: 80px;
-  }
-  100% {
-    top: 0;
-  }
-}
-@keyframes bunny {
-  0% {
-    top: 0;
-  }
-  25% {
-    top: 80px;
-  }
-  100% {
-    top: 0;
-  }
-}
 @-webkit-keyframes layer {
   0% {
     bottom: 0;
@@ -508,7 +474,7 @@ input[type=checkbox] {
   cursor: pointer;
   height: 50px;
   margin: 0;
-  position: relative;
+  position: absolute;
   top: 0;
   width: 80px;
   z-index: 2;
@@ -530,40 +496,25 @@ input:checked {
 }
 
 .layer-1 input[type=checkbox] {
-  left: -170px;
+  left: -155px;
   -webkit-animation: layer 2s ease-in-out infinite;
           animation: layer 2s ease-in-out infinite;
 }
 
 .layer-2 input[type=checkbox] {
-  -webkit-animation-name: bunny;
-          animation-name: bunny;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation: layer 2s ease-in-out infinite;
+          animation: layer 2s ease-in-out infinite;
+  position: absolute;
+  left: -20px;
+  top: -10px;
 }
 
 .layer-4 input[type=checkbox] {
-  -webkit-animation-name: bunny;
-          animation-name: bunny;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation: layer 2s ease-in-out infinite;
+          animation: layer 2s ease-in-out infinite;
 }
 
 .layer-6 input[type=checkbox] {
-  -webkit-animation-name: bunny;
-          animation-name: bunny;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation: layer 2s ease-in-out infinite;
+          animation: layer 2s ease-in-out infinite;
 }
